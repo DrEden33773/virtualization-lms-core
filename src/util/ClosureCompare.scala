@@ -3,7 +3,7 @@ package util
 
 import java.io._
 
-trait ClosureCompare extends Externalizable {
+trait ClosureCompare extends Externalizable { 
 
   // the whole thing must be serializable, since embedded closures
   // might refer to the context.

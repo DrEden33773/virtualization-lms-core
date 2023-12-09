@@ -1,0 +1,794 @@
+2023.12.10 05:29:06 INFO  Started: Metals version 1.1.0 in folders '/home/eden/SourceCodeLearning/virtualization-lms-core' for client Visual Studio Code 1.85.0.[0m
+2023.12.10 05:29:07 WARN  Unsupported sbt version 0.13.15[0m
+2023.12.10 05:29:07 ERROR Unexpected error initializing server: 
+scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+[0m
+2023.12.10 05:29:23 INFO  no build target found for /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+Dec 10, 2023 5:29:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:29:30 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:29:33 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:29:33 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:29:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:29:35 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:29:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:29:36 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:29:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:29:39 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:29:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:29:39 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:30:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:30:55 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:30:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:30:59 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:31:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:31:00 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+Dec 10, 2023 5:31:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:31:07 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/util/ClosureCompare.scala[0m
+Dec 10, 2023 5:31:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:31:09 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/util/ClosureCompare.scala[0m
+Dec 10, 2023 5:31:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:31:21 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/util/ClosureCompare.scala[0m
+Dec 10, 2023 5:31:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+java.util.concurrent.CompletionException: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.10 05:31:22 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/util/ClosureCompare.scala[0m
+2023.12.10 05:31:28 INFO  Shutting down server[0m
+2023.12.10 05:31:28 INFO  shutting down Metals[0m
+2023.12.10 05:31:28 INFO  Exiting server[0m
+2023.12.10 05:31:37 INFO  Started: Metals version 1.1.0 in folders '/home/eden/SourceCodeLearning/virtualization-lms-core' for client Visual Studio Code 1.85.0.[0m
+2023.12.10 05:31:38 WARN  Unsupported sbt version 0.13.15[0m
+2023.12.10 05:31:38 ERROR Unexpected error initializing server: 
+scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+[0m
+2023.12.10 05:31:40 INFO  no build target found for /home/eden/SourceCodeLearning/virtualization-lms-core/src/util/ClosureCompare.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2023.12.10 05:32:58 WARN  Unsupported sbt version 0.13.15[0m
+2023.12.10 05:33:39 INFO  running '/home/eden/.jabba/jdk/openjdk@1.17.0/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -Xms4G -Xmx4G -Xss2M -XX:+UseParallelGC -jar /tmp/metals12076943071345849332/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2023.12.10 05:33:39 ERROR [info] [launcher] getting org.scala-sbt sbt 1.9.6  (this may take some time)...[0m
+2023.12.10 05:33:40 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/project/metals.sbt[0m
+2023.12.10 05:33:40 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/project/project/metals.sbt[0m
+2023.12.10 05:33:46 INFO  [info] welcome to sbt 1.9.6 (Oracle Corporation Java 17)[0m
+2023.12.10 05:33:48 INFO  [info] loading settings for project virtualization-lms-core-build-build-build from metals.sbt ...[0m
+2023.12.10 05:33:48 INFO  [info] loading project definition from /home/eden/SourceCodeLearning/virtualization-lms-core/project/project/project[0m
+2023.12.10 05:33:49 INFO  [info] loading settings for project virtualization-lms-core-build-build from metals.sbt ...[0m
+2023.12.10 05:33:49 INFO  [info] loading project definition from /home/eden/SourceCodeLearning/virtualization-lms-core/project/project[0m
+2023.12.10 05:33:52 INFO  [success] Generated .bloop/virtualization-lms-core-build-build.json[0m
+2023.12.10 05:33:52 INFO  [success] Total time: 2 s, completed Dec 10, 2023, 5:33:52 AM[0m
+2023.12.10 05:33:53 INFO  [info] loading settings for project virtualization-lms-core-build from metals.sbt,plugin.sbt ...[0m
+2023.12.10 05:33:53 INFO  [info] loading project definition from /home/eden/SourceCodeLearning/virtualization-lms-core/project[0m
+2023.12.10 05:34:02 INFO  [warn] [0m
+2023.12.10 05:34:02 INFO  [warn] 	Note: Some unresolved dependencies have extra attributes.  Check that these dependencies exist with the requested attributes.[0m
+2023.12.10 05:34:02 INFO  [warn] 		org.xerial.sbt:sbt-sonatype:0.5.0 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:02 INFO  [warn] 		org.scoverage:sbt-coveralls:1.0.0.BETA1 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:02 INFO  [warn] 		com.jsuereth:sbt-pgp:1.0.0 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:02 INFO  [warn] 		org.scoverage:sbt-scoverage:1.0.1 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:02 INFO  [warn] 		com.github.gseitz:sbt-release:1.0.0 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:02 INFO  [warn] [0m
+2023.12.10 05:34:02 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+2023.12.10 05:34:02 INFO  [error] Couldn't run bloopGenerate. Cause: Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),updateClassifiers)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Select(updateClassifiers), Zero),classifiersModule)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None), Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None), Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),externalDependencyClasspath)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),managedClasspath)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None), Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),classpathConfiguration)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None), Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),bloopInternalClasspath)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),classpathConfiguration)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None)), directCause=None)), directCause=None)), directCause=None), Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),scalacOptions)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),scalacOptions)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),scalacOptions)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),scalacOptions)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),scalacOptions)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None), Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),externalDependencyClasspath)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),managedClasspath)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None), Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),classpathConfiguration)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None), Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),bloopInternalClasspath)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Select(ConfigKey(compile)), Zero, Zero),classpathConfiguration)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/eden/SourceCodeLearning/virtualization-lms-core/project/,virtualization-lms-core-build)), Zero, Zero, Zero),update)))), tpe=Error, msg=None, causes=List(), directCause=Some(sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml))), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)[0m
+2023.12.10 05:34:02 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:344)[0m
+2023.12.10 05:34:02 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:313)[0m
+2023.12.10 05:34:02 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+2023.12.10 05:34:02 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:313)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:60)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:134)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:74)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:147)[0m
+2023.12.10 05:34:02 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:147)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:128)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:220)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:161)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3801)[0m
+2023.12.10 05:34:02 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:63)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:69)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.Execute.work(Execute.scala:292)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+2023.12.10 05:34:02 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)[0m
+2023.12.10 05:34:02 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+2023.12.10 05:34:02 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)[0m
+2023.12.10 05:34:02 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+2023.12.10 05:34:02 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+2023.12.10 05:34:02 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+2023.12.10 05:34:02 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:833)[0m
+2023.12.10 05:34:02 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   Not found[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:02 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:02 INFO  [error] Total time: 9 s, completed Dec 10, 2023, 5:34:02 AM[0m
+2023.12.10 05:34:02 INFO  [warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)[0m
+2023.12.10 05:34:09 INFO  [warn] [0m
+2023.12.10 05:34:09 INFO  [warn] 	Note: Some unresolved dependencies have extra attributes.  Check that these dependencies exist with the requested attributes.[0m
+2023.12.10 05:34:09 INFO  [warn] 		org.xerial.sbt:sbt-sonatype:0.5.0 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:09 INFO  [warn] 		org.scoverage:sbt-coveralls:1.0.0.BETA1 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:09 INFO  [warn] 		com.jsuereth:sbt-pgp:1.0.0 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:09 INFO  [warn] 		org.scoverage:sbt-scoverage:1.0.1 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:09 INFO  [warn] 		com.github.gseitz:sbt-release:1.0.0 (sbtVersion=1.0, scalaVersion=2.12)[0m
+2023.12.10 05:34:09 INFO  [warn] [0m
+2023.12.10 05:34:09 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+2023.12.10 05:34:09 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:344)[0m
+2023.12.10 05:34:09 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:313)[0m
+2023.12.10 05:34:09 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+2023.12.10 05:34:09 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:313)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:60)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:134)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:74)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:147)[0m
+2023.12.10 05:34:09 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:147)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:128)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:220)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:161)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3801)[0m
+2023.12.10 05:34:09 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:63)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:69)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.Execute.work(Execute.scala:292)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+2023.12.10 05:34:09 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)[0m
+2023.12.10 05:34:09 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+2023.12.10 05:34:09 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)[0m
+2023.12.10 05:34:09 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+2023.12.10 05:34:09 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+2023.12.10 05:34:09 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+2023.12.10 05:34:09 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:833)[0m
+2023.12.10 05:34:09 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading org.xerial.sbt:sbt-sonatype;sbtVersion=1.0;scalaVersion=2.12:0.5.0[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.12_1.0/0.5.0/sbt-sonatype-0.5.0.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localorg.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.xerial.sbt/sbt-sonatype/scala_2.12/sbt_1.0/0.5.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] Error downloading org.scoverage:sbt-coveralls;sbtVersion=1.0;scalaVersion=2.12:1.0.0.BETA1[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-coveralls_2.12_1.0/1.0.0.BETA1/sbt-coveralls-1.0.0.BETA1.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-coveralls/scala_2.12/sbt_1.0/1.0.0.BETA1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] Error downloading com.jsuereth:sbt-pgp;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/com/jsuereth/sbt-pgp_2.12_1.0/1.0.0/sbt-pgp-1.0.0.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localcom.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.jsuereth/sbt-pgp/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] Error downloading org.scoverage:sbt-scoverage;sbtVersion=1.0;scalaVersion=2.12:1.0.1[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.0.1/sbt-scoverage-1.0.1.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localorg.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.0.1/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error] Error downloading com.github.gseitz:sbt-release;sbtVersion=1.0;scalaVersion=2.12:1.0.0[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   Not found[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/gseitz/sbt-release_2.12_1.0/1.0.0/sbt-release-1.0.0.pom[0m
+2023.12.10 05:34:09 INFO  [error]   not found: /home/eden/.ivy2/localcom.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.github.gseitz/sbt-release/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml[0m
+2023.12.10 05:34:09 INFO  [warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)[0m
+2023.12.10 05:34:09 INFO  time: ran 'sbt bloopInstall' in 30s[0m
+2023.12.10 05:34:09 ERROR sbt command failed: /home/eden/.jabba/jdk/openjdk@1.17.0/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -Xms4G -Xmx4G -Xss2M -XX:+UseParallelGC -jar /tmp/metals12076943071345849332/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+2023.12.10 05:34:09 INFO  skipping build import with status 'Failed'[0m
+2023.12.10 05:34:21 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+2023.12.10 05:34:23 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayBufferOps.scala[0m
+2023.12.10 05:34:28 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/ArrayOps.scala[0m
+2023.12.10 05:34:32 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/src/common/Base.scala[0m
+2023.12.10 05:34:45 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/project/plugin.sbt[0m
+2023.12.10 05:34:45 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/build.sbt[0m
+2023.12.10 05:34:45 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/project/project/metals.sbt[0m
+2023.12.10 05:34:45 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/project/metals.sbt[0m
+2023.12.10 05:34:45 INFO  skipping build import with status 'Failed'[0m
+2023.12.10 05:34:45 WARN  no build target for: /home/eden/SourceCodeLearning/virtualization-lms-core/publish.sbt[0m
+2023.12.10 05:34:45 INFO  skipping build import with status 'Failed'[0m
+Dec 10, 2023 5:34:54 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

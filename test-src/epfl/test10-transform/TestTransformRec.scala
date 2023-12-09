@@ -8,37 +8,54 @@ import test2._
 import test3._
 import test4._
 
-import java.io.{PrintWriter,StringWriter,FileOutputStream}
+import java.io.{PrintWriter, StringWriter, FileOutputStream}
 import scala.reflect.SourceContext
 
 class TestTransformRec extends FileDiffSuite {
 
   val prefix = home + "test-out/epfl/test10-"
 
-  trait DSL extends LiftPrimitives with PrimitiveOps with Functions with Equal with IfThenElse {
+  trait DSL
+      extends LiftPrimitives
+      with PrimitiveOps
+      with Functions
+      with Equal
+      with IfThenElse {
     def testFun: Rep[Double => Double]
     def test(x: Rep[Double]): Rep[Double] = testFun(x)
   }
 
-  trait Impl extends DSL with PrimitiveOpsExpOpt with EqualExp with IfThenElseFatExp with LoopsFatExp with FunctionsExternalDef1 { self =>
+  trait Impl
+      extends DSL
+      with PrimitiveOpsExpOpt
+      with EqualExp
+      with IfThenElseFatExp
+      with LoopsFatExp
+      with FunctionsExternalDef1 { self =>
     override val verbosity = 1
-    
-    case class DefineFun2[A,B](res: Block[B])(val arg1: Sym[A], val arg2: Sym[Int]) extends Def[A=>B]
+
+    case class DefineFun2[A, B](res: Block[B])(
+        val arg1: Sym[A],
+        val arg2: Sym[Int]
+    ) extends Def[A => B]
 
     override def boundSyms(e: Any): List[Sym[Any]] = e match {
-      case f@DefineFun2(y) => f.arg1::f.arg2::effectSyms(y)
-      case _ => super.boundSyms(e)
+      case f @ DefineFun2(y) => f.arg1 :: f.arg2 :: effectSyms(y)
+      case _                 => super.boundSyms(e)
     }
 
     override def symsFreq(e: Any): List[(Sym[Any], Double)] = e match {
       case DefineFun2(y) => freqHot(y)
-      case _ => super.symsFreq(e)
+      case _             => super.symsFreq(e)
     }
 
-    override def mirror[A:Typ](e: Def[A], f: Transformer)(implicit pos: SourceContext): Exp[A] = (e match {
-      case g@Apply(x,y) => toAtom(Apply(f(x),f(y))(mtype(g.mA),mtype(g.mB)))
-      case g@DefineFun(y) => toAtom(DefineFun(f(y))(g.arg))(mtyp1[A],pos)
-      case _ => super.mirror(e,f)
+    override def mirror[A: Typ](e: Def[A], f: Transformer)(implicit
+        pos: SourceContext
+    ): Exp[A] = (e match {
+      case g @ Apply(x, y) =>
+        toAtom(Apply(f(x), f(y))(mtype(g.mA), mtype(g.mB)))
+      case g @ DefineFun(y) => toAtom(DefineFun(f(y))(g.arg))(mtyp1[A], pos)
+      case _                => super.mirror(e, f)
     }).asInstanceOf[Exp[A]]
 
     val runner = new Runner { val p: self.type = self }
@@ -48,7 +65,7 @@ class TestTransformRec extends FileDiffSuite {
   trait Runner {
     val p: Impl
     def run() = {
-      import p.{intTyp,doubleTyp,unitTyp}
+      import p.{intTyp, doubleTyp, unitTyp}
       val x = p.fresh[Double]
       val y = p.reifyEffects(p.test(x))
 
@@ -69,7 +86,7 @@ class TestTransformRec extends FileDiffSuite {
         }
       } catch {
         case ex =>
-        println("error: " + ex)
+          println("error: " + ex)
       }
       val trans = new MyTransformer {
         val IR: p.type = p
@@ -83,7 +100,7 @@ class TestTransformRec extends FileDiffSuite {
         }
       } catch {
         case ex =>
-        println("error: " + ex)
+          println("error: " + ex)
       }
       println("-- done")
     }
@@ -94,18 +111,26 @@ class TestTransformRec extends FileDiffSuite {
     import IR._
 
     override def transformDef[A](lhs: Sym[A], rhs: Def[A]) = (rhs match {
-      case g@DefineFun(y) => Some(() => DefineFun2(apply(g.res))(g.arg, fresh[Int]))
+      case g @ DefineFun(y) =>
+        Some(() => DefineFun2(apply(g.res))(g.arg, fresh[Int]))
       case _ => super.transformDef(lhs, rhs)
     }).asInstanceOf[Option[() => Def[A]]]
   }
 
-  trait Codegen extends ScalaGenPrimitiveOps with ScalaGenEqual with ScalaGenIfThenElse with ScalaGenFunctionsExternal {
+  trait Codegen
+      extends ScalaGenPrimitiveOps
+      with ScalaGenEqual
+      with ScalaGenIfThenElse
+      with ScalaGenFunctionsExternal {
     val IR: Impl
     import IR._
 
     override def emitNode(sym: Sym[Any], rhs: Def[Any]) = rhs match {
-      case e@DefineFun2(y) =>
-        emitValDef(sym, "/*2*/{" + quote(e.arg1) + ": (" + e.arg1.tp + ") => "/*}*/)
+      case e @ DefineFun2(y) =>
+        emitValDef(
+          sym,
+          "/*2*/{" + quote(e.arg1) + ": (" + e.arg1.tp + ") => " /*}*/
+        )
         emitBlock(y)
         stream.println(quote(getBlockResult(y)))
         stream.println("}")
@@ -113,14 +138,14 @@ class TestTransformRec extends FileDiffSuite {
     }
   }
 
-  def testSimple = withOutFileChecked(prefix+"transformrec1") {
+  def testSimple = withOutFileChecked(prefix + "transformrec1") {
     trait Prog extends DSL {
       def testFun = doLambda { n => n + 1.0 }
     }
     new Prog with Impl
   }
 
-  def testRec = withOutFileChecked(prefix+"transformrec2") {
+  def testRec = withOutFileChecked(prefix + "transformrec2") {
     trait Prog extends DSL {
       def testFun = doLambda { n =>
         if (n == 0) 1.0 else n * testFun(n - 1.0)
@@ -129,13 +154,13 @@ class TestTransformRec extends FileDiffSuite {
     new Prog with Impl
   }
 
-  def testMutuallyRec = withOutFileChecked(prefix+"transformrec3") {
+  def testMutuallyRec = withOutFileChecked(prefix + "transformrec3") {
     trait Prog extends DSL {
       def testFun = doLambda { n =>
         if (n == 0) 1.0 else n * other(n)
       }
-      def other: Rep[Double=>Double] = doLambda { n =>
-        testFun(n-1.0)
+      def other: Rep[Double => Double] = doLambda { n =>
+        testFun(n - 1.0)
       }
     }
     new Prog with Impl

@@ -10,27 +10,38 @@ import java.io.PrintWriter
 
 trait JSCodegen extends GenericCodegen {
   import IR._
-  
-  def emitHTMLPage[B](f: () => Exp[B], stream: PrintWriter)(implicit mB: Typ[B]): Unit = {
-    stream.println("<html><head><title>Scala2JS</title><script type=\"text/JavaScript\">")
+
+  def emitHTMLPage[B](f: () => Exp[B], stream: PrintWriter)(implicit
+      mB: Typ[B]
+  ): Unit = {
+    stream.println(
+      "<html><head><title>Scala2JS</title><script type=\"text/JavaScript\">"
+    )
 
     // FIXME move unitTyp from BaseExp to Expressions or change IR required type to BaseExp
     implicit val unitTyp: Typ[Unit] = ManifestTyp(implicitly)
 
-    emitSource((x:Exp[Unit]) => f(), "main", stream)
-    
+    emitSource((x: Exp[Unit]) => f(), "main", stream)
+
     stream.println("</script><body onload=\"main(0)\">")
     stream.println("</body></html>")
     stream.flush
   }
 
-  def emitSource[A : Typ](args: List[Sym[_]], body: Block[A], methName: String, out: PrintWriter) = {
+  def emitSource[A: Typ](
+      args: List[Sym[_]],
+      body: Block[A],
+      methName: String,
+      out: PrintWriter
+  ) = {
     withStream(out) {
-      stream.println("function "+methName+"("+args.map(quote).mkString(", ")+") {")
-    
+      stream.println(
+        "function " + methName + "(" + args.map(quote).mkString(", ") + ") {"
+      )
+
       emitBlock(body)
-      stream.println("return "+quote(getBlockResult(body)))
-    
+      stream.println("return " + quote(getBlockResult(body)))
+
       stream.println("}")
     }
     Nil
@@ -50,16 +61,15 @@ trait JSGenBase extends JSCodegen {
 }
 
 trait JSGenEffect extends JSNestedCodegen with JSGenBase {
-  val IR: EffectExp  
+  val IR: EffectExp
 }
-
 
 trait JSGenIfThenElse extends BaseGenIfThenElse with JSGenEffect { // it's more or less generic...
   val IR: IfThenElseExp
   import IR._
 
   override def emitNode(sym: Sym[Any], rhs: Def[Any]) = rhs match {
-    case IfThenElse(c,a,b) =>  
+    case IfThenElse(c, a, b) =>
       stream.println("var " + quote(sym))
       stream.println("if (" + quote(c) + ") {")
       emitBlock(a)
@@ -77,10 +87,10 @@ trait JSGenPrimitiveOps extends JSGenBase { // TODO: define a generic one
   import IR._
 
   override def emitNode(sym: Sym[Any], rhs: Def[Any]) = rhs match {
-    case DoublePlus(a,b) =>  emitValDef(sym, "" + quote(a) + "+" + quote(b))
-    case DoubleMinus(a,b) => emitValDef(sym, "" + quote(a) + "-" + quote(b))
-    case DoubleTimes(a,b) => emitValDef(sym, "" + quote(a) + "*" + quote(b))
-    case DoubleDivide(a,b) =>   emitValDef(sym, "" + quote(a) + "/" + quote(b))
-    case _ => super.emitNode(sym, rhs)
+    case DoublePlus(a, b)   => emitValDef(sym, "" + quote(a) + "+" + quote(b))
+    case DoubleMinus(a, b)  => emitValDef(sym, "" + quote(a) + "-" + quote(b))
+    case DoubleTimes(a, b)  => emitValDef(sym, "" + quote(a) + "*" + quote(b))
+    case DoubleDivide(a, b) => emitValDef(sym, "" + quote(a) + "/" + quote(b))
+    case _                  => super.emitNode(sym, rhs)
   }
-} 
+}

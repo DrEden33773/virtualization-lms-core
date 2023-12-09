@@ -6,8 +6,8 @@ import common._
 
 trait Trig extends Base {
 
-  //todo removed
-  //implicit def unit(x: Double): Rep[Double]
+  // todo removed
+  // implicit def unit(x: Double): Rep[Double]
 
   def sin(x: Rep[Double]): Rep[Double]
   def cos(x: Rep[Double]): Rep[Double]
@@ -28,12 +28,12 @@ trait TrigExpOpt extends TrigExp {
 
   override def sin(x: Exp[Double]) = x match {
     case Const(x) => unit(math.sin(x))
-    case _ => super.sin(x)
+    case _        => super.sin(x)
   }
-  
+
   override def cos(x: Exp[Double]) = x match {
     case Const(x) => unit(math.cos(x))
-    case _ => super.cos(x)
+    case _        => super.cos(x)
   }
 
 }

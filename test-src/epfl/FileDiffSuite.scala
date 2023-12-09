@@ -1,9 +1,14 @@
 package scala.lms
 package epfl
 
-import java.io.{PrintStream,File,FileInputStream,FileOutputStream,ByteArrayOutputStream}
+import java.io.{
+  PrintStream,
+  File,
+  FileInputStream,
+  FileOutputStream,
+  ByteArrayOutputStream
+}
 import org.scalatest._
-
 
 trait FileDiffSuite extends Suite {
   val home = sys.env.get("LMS_HOME").map(_ + "/").getOrElse("")
@@ -32,7 +37,7 @@ trait FileDiffSuite extends Suite {
       System.setErr(oldStdErr)
     }
   }
-  
+
   def readFile(name: String): String = {
     val source = scala.io.Source.fromFile(name)
     val lines = source.getLines.mkString("\n")
@@ -40,7 +45,10 @@ trait FileDiffSuite extends Suite {
     lines
   }
   def assertFileEqualsCheck(name: String): Unit = {
-    assert(readFile(name) == readFile(name+".check"), name) // TODO: diff output
+    assert(
+      readFile(name) == readFile(name + ".check"),
+      name
+    ) // TODO: diff output
     new File(name) delete ()
   }
   def withOutFileChecked(name: String)(func: => Unit): Unit = {

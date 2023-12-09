@@ -10,16 +10,18 @@ import test3._
 trait FunctionsGraphViz extends GraphVizExport {
   val IR: FunctionsExternalDef0
   import IR._
-  
-  override def emitNode(sym: Sym[Any], rhs: Def[Any])(implicit stream: java.io.PrintWriter) = rhs match {
-/*
+
+  override def emitNode(sym: Sym[Any], rhs: Def[Any])(implicit
+      stream: java.io.PrintWriter
+  ) = rhs match {
+    /*
     case Result(x) =>
       super.emitNode(sym, rhs)
       stream.println("shape=point")
     case Test(x, y) =>
       super.emitNode(sym, rhs)
       stream.println("color=red")
-*/
+     */
     case DefineFun(x) =>
       super.emitNode(sym, rhs)
       stream.println("color=green")
@@ -32,8 +34,8 @@ trait FunctionsGraphViz extends GraphVizExport {
       super.emitNode(sym, rhs)
 //      stream.println("shape=point")
   }
-  
-/*
+
+  /*
   override def emitDeps(sym: Sym[Any], rhs: Def[Any], deps: List[Sym[Any]], stream: java.io.PrintWriter) = rhs match {
     case AndAlso(x, effects) =>
       super.emitDeps(sym, rhs, deps -- effects.asInstanceOf[List[Sym[Any]]]) // TODO: cast
@@ -43,6 +45,6 @@ trait FunctionsGraphViz extends GraphVizExport {
     case _ =>
       super.emitDeps(sym, rhs, deps)
   }
-*/
+   */
 
 }

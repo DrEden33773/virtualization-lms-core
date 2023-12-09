@@ -7,34 +7,44 @@ trait OpenCLDeviceTransfer extends AbstractDeviceTransfer {
   val IR: Expressions
   import IR._
 
-  def emitSendSlave(tp: Typ[_]): (String,String) = {
+  def emitSendSlave(tp: Typ[_]): (String, String) = {
     if (isPrimitiveType(tp)) {
       val out = new StringBuilder
-      val signature = "%s sendOpenCL_%s(%s sym)".format(remap(tp),mangledName(remap(tp)),remap(tp))
+      val signature = "%s sendOpenCL_%s(%s sym)".format(
+        remap(tp),
+        mangledName(remap(tp)),
+        remap(tp)
+      )
       out.append(signature + " {\n")
       out.append("\treturn sym;\n")
       out.append("}\n")
-      (signature+";\n", out.toString)
-    }
-    else {
-      throw new GenerationFailedException("OpenCLDeviceTransfer: Unknown type " + tp.toString)
+      (signature + ";\n", out.toString)
+    } else {
+      throw new GenerationFailedException(
+        "OpenCLDeviceTransfer: Unknown type " + tp.toString
+      )
     }
   }
 
-  def emitRecvSlave(tp: Typ[_]): (String,String) = {
+  def emitRecvSlave(tp: Typ[_]): (String, String) = {
     if (isPrimitiveType(tp)) {
       val out = new StringBuilder
-      val signature = "%s recvOpenCL_%s(%s sym)".format(remap(tp),mangledName(remap(tp)),remap(tp))
+      val signature = "%s recvOpenCL_%s(%s sym)".format(
+        remap(tp),
+        mangledName(remap(tp)),
+        remap(tp)
+      )
       out.append(signature + " {\n")
       out.append("\treturn sym;\n")
       out.append("}\n")
-      (signature+";\n", out.toString)
-    }
-    else {
-      throw new GenerationFailedException("OpenCLDeviceTransfer: Unknown type " + tp.toString)
+      (signature + ";\n", out.toString)
+    } else {
+      throw new GenerationFailedException(
+        "OpenCLDeviceTransfer: Unknown type " + tp.toString
+      )
     }
   }
-/*
+  /*
   def emitSendViewSlave(sym: Sym[Any]): (String,String) = {
     if (isPrimitiveType(sym.tp)) {
       val out = new StringBuilder
@@ -64,32 +74,40 @@ trait OpenCLDeviceTransfer extends AbstractDeviceTransfer {
       throw new GenerationFailedException("OpenCLDeviceTransfer: Unknown type " + sym.tp.toString)
     }
   }
-*/
-  def emitSendUpdateSlave(tp: Typ[_]): (String,String) = {
-    if(isPrimitiveType(tp)) {
+   */
+  def emitSendUpdateSlave(tp: Typ[_]): (String, String) = {
+    if (isPrimitiveType(tp)) {
       val out = new StringBuilder
-      val signature = "void sendUpdateOpenCL_%s(%s sym)".format(mangledName(remap(tp)),remap(tp))
+      val signature = "void sendUpdateOpenCL_%s(%s sym)".format(
+        mangledName(remap(tp)),
+        remap(tp)
+      )
       out.append(signature + " {\n")
       out.append("\tassert(false);\n")
       out.append("}\n")
-      (signature+";\n", out.toString)
-    }
-    else {
-      throw new GenerationFailedException("OpenCLDeviceTransfer: Unknown type " + tp.toString)
+      (signature + ";\n", out.toString)
+    } else {
+      throw new GenerationFailedException(
+        "OpenCLDeviceTransfer: Unknown type " + tp.toString
+      )
     }
   }
 
-  def emitRecvUpdateSlave(tp: Typ[_]): (String,String) = {
-    if(isPrimitiveType(tp)) {
+  def emitRecvUpdateSlave(tp: Typ[_]): (String, String) = {
+    if (isPrimitiveType(tp)) {
       val out = new StringBuilder
-      val signature = "void recvUpdateOpenCL_%s(%s sym)".format(mangledName(remap(tp)),remap(tp))
+      val signature = "void recvUpdateOpenCL_%s(%s sym)".format(
+        mangledName(remap(tp)),
+        remap(tp)
+      )
       out.append(signature + " {\n")
       out.append("\tassert(false);\n")
       out.append("}\n")
-      (signature+";\n", out.toString)
-    }
-    else {
-      throw new GenerationFailedException("OpenCLDeviceTransfer: Unknown type " + tp.toString)
+      (signature + ";\n", out.toString)
+    } else {
+      throw new GenerationFailedException(
+        "OpenCLDeviceTransfer: Unknown type " + tp.toString
+      )
     }
   }
 }

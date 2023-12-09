@@ -4,7 +4,10 @@ package internal
 import java.io.{FileWriter, StringWriter, PrintWriter, File}
 import collection.immutable.List._
 
-trait CudaCodegen extends GPUCodegen with CppHostTransfer with CudaDeviceTransfer {
+trait CudaCodegen
+    extends GPUCodegen
+    with CppHostTransfer
+    with CudaDeviceTransfer {
   val IR: Expressions
   import IR._
 
@@ -13,21 +16,32 @@ trait CudaCodegen extends GPUCodegen with CppHostTransfer with CudaDeviceTransfe
   override def kernelFileExt = "cu"
   override def toString = "cuda"
   override def devFuncPrefix = "__device__"
-  
-  override def initializeGenerator(buildDir:String, args: Array[String]): Unit = {
+
+  override def initializeGenerator(
+      buildDir: String,
+      args: Array[String]
+  ): Unit = {
     val outDir = new File(buildDir)
     outDir.mkdirs
 
-    actRecordStream = new PrintWriter(new FileWriter(buildDir + deviceTarget + "actRecords.h"))
-    
-    helperFuncStream = new PrintWriter(new FileWriter(buildDir + deviceTarget + "helperFuncs.cu"))
-    helperFuncStream.print("#include \"" + deviceTarget + "helperFuncs.h\"\n")    
-    
-    typesStream = new PrintWriter(new FileWriter(buildDir + deviceTarget + "types.h"))
+    actRecordStream = new PrintWriter(
+      new FileWriter(buildDir + deviceTarget + "actRecords.h")
+    )
+
+    helperFuncStream = new PrintWriter(
+      new FileWriter(buildDir + deviceTarget + "helperFuncs.cu")
+    )
+    helperFuncStream.print("#include \"" + deviceTarget + "helperFuncs.h\"\n")
+
+    typesStream = new PrintWriter(
+      new FileWriter(buildDir + deviceTarget + "types.h")
+    )
     typesStream.flush
-    
-    //TODO: Put all the DELITE APIs declarations somewhere
-    headerStream = new PrintWriter(new FileWriter(buildDir + deviceTarget + "helperFuncs.h"))
+
+    // TODO: Put all the DELITE APIs declarations somewhere
+    headerStream = new PrintWriter(
+      new FileWriter(buildDir + deviceTarget + "helperFuncs.h")
+    )
     headerStream.println("#include <iostream>")
     headerStream.println("#include <limits>")
     headerStream.println("#include <float.h>")
@@ -41,26 +55,34 @@ trait CudaCodegen extends GPUCodegen with CppHostTransfer with CudaDeviceTransfe
     super.initializeGenerator(buildDir, args)
   }
 
-  def emitSource[A : Typ](args: List[Sym[_]], body: Block[A], className: String, out: PrintWriter) = {
+  def emitSource[A: Typ](
+      args: List[Sym[_]],
+      body: Block[A],
+      className: String,
+      out: PrintWriter
+  ) = {
     val sB = remap(typ[A])
 
     withStream(out) {
-      stream.println("/*****************************************\n"+
-                     "  Emitting Cuda Generated Code                  \n"+
-                     "*******************************************/\n" +
-                     "#include <stdio.h>\n" +
-                     "#include <stdlib.h>"
+      stream.println(
+        "/*****************************************\n" +
+          "  Emitting Cuda Generated Code                  \n" +
+          "*******************************************/\n" +
+          "#include <stdio.h>\n" +
+          "#include <stdlib.h>"
       )
 
       stream.println("int main(int argc, char** argv) {")
 
       emitBlock(body)
-      //stream.println(quote(getBlockResult(y)))
+      // stream.println(quote(getBlockResult(y)))
 
       stream.println("}")
-      stream.println("/*****************************************\n"+
-                     "  End of Cuda Generated Code                  \n"+
-                     "*******************************************/")
+      stream.println(
+        "/*****************************************\n" +
+          "  End of Cuda Generated Code                  \n" +
+          "*******************************************/"
+      )
     }
     Nil
   }

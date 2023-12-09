@@ -5,25 +5,31 @@ package test9
 import common._
 import test1._
 
-import test7.{Print,PrintExp,ScalaGenPrint}
+import test7.{Print, PrintExp, ScalaGenPrint}
 import internal.ScalaCompile
 
 import scala.util.continuations._
 
 import util.OverloadHack
 
-import java.io.{PrintWriter,StringWriter,FileOutputStream}
+import java.io.{PrintWriter, StringWriter, FileOutputStream}
 
+trait CpsProg1
+    extends LiftPrimitives
+    with PrimitiveOps
+    with IfThenElse
+    with Equal
+    with Print
+    with Compile {
 
-trait CpsProg1 extends LiftPrimitives with PrimitiveOps with IfThenElse with Equal with Print with Compile {
-  
-  def choose[A:Typ](x: Rep[Boolean]): Boolean @cps[Rep[A]] = shift { k: (Boolean => Rep[A]) =>
-    if (x)
-      k(true)
-    else
-      k(false)
+  def choose[A: Typ](x: Rep[Boolean]): Boolean @cps[Rep[A]] = shift {
+    k: (Boolean => Rep[A]) =>
+      if (x)
+        k(true)
+      else
+        k(false)
   }
-  
+
   def test(x: Rep[Boolean]): Rep[Unit] = { // recompile
     reset {
       val c = choose[Unit](x)
@@ -34,68 +40,78 @@ trait CpsProg1 extends LiftPrimitives with PrimitiveOps with IfThenElse with Equ
       }
     }
   }
-  
+
 }
 
-trait CpsProg2 extends LiftPrimitives with PrimitiveOps with IfThenElse with Equal with Print with Compile {
-  
-  def choose[A:Typ](x: Rep[Boolean]): Boolean @cps[Rep[A]] = shift { k: (Boolean => Rep[A]) =>
-    if (x)
-      k(true)
-    else
-      k(false)
+trait CpsProg2
+    extends LiftPrimitives
+    with PrimitiveOps
+    with IfThenElse
+    with Equal
+    with Print
+    with Compile {
+
+  def choose[A: Typ](x: Rep[Boolean]): Boolean @cps[Rep[A]] = shift {
+    k: (Boolean => Rep[A]) =>
+      if (x)
+        k(true)
+      else
+        k(false)
   }
-  
-  
-  def pickValue[A:Typ](x: Rep[Boolean]): Rep[Int] @cps[Rep[A]] = { 
+
+  def pickValue[A: Typ](x: Rep[Boolean]): Rep[Int] @cps[Rep[A]] = {
     val c = choose[A](x)
-    if (c) 
-      unit(7) 
-    else 
+    if (c)
+      unit(7)
+    else
       unit(9)
   }
-  
+
   def test(x: Rep[Boolean]): Rep[Unit] = { // recompile
     reset {
       val z = pickValue[Unit](x)
       this.print(z)
     }
   }
-  
+
 }
 
+trait AmbProg1
+    extends LiftPrimitives
+    with PrimitiveOps
+    with IfThenElse
+    with Equal
+    with Print
+    with Compile {
 
-trait AmbProg1 extends LiftPrimitives with PrimitiveOps with IfThenElse with Equal with Print with Compile {
-  
-  //def __ifThenElse[T:Typ,U](cond: Rep[Boolean], thenp: => Rep[T]@cps[U], elsep: => Rep[T]@cps[U]): Rep[T]@cps[U] = cond match { case true => thenp case false => elsep }
-  
-  
+  // def __ifThenElse[T:Typ,U](cond: Rep[Boolean], thenp: => Rep[T]@cps[U], elsep: => Rep[T]@cps[U]): Rep[T]@cps[U] = cond match { case true => thenp case false => elsep }
+
   // xs could be either Rep[List[T]] or List[Rep[T]]
   // if List[Rep[T]], code paths could be duplicated or not...
 
   // this is the BAM variant of AMB: be careful, it can cause code explosion.
   def amb[T](xs: List[Rep[T]]): Rep[T] @cps[Rep[Unit]] = shift { k =>
-    xs foreach k 
-  }  
-  
-  def require(x: Rep[Boolean]): Rep[Unit] @cps[Rep[Unit]] = shift { k: (Rep[Unit]=>Rep[Unit]) =>
-    if (x) k() else ()
+    xs foreach k
   }
-  
-  
+
+  def require(x: Rep[Boolean]): Rep[Unit] @cps[Rep[Unit]] = shift {
+    k: (Rep[Unit] => Rep[Unit]) =>
+      if (x) k() else ()
+  }
+
   def test(x: Rep[Int]): Rep[Unit] = {
-    
+
     reset {
-      val a = amb(List(unit(1),unit(2),x))
-      val b = amb(List(unit(1),unit(2),unit(3)))
+      val a = amb(List(unit(1), unit(2), x))
+      val b = amb(List(unit(1), unit(2), unit(3)))
       require(a == b)
       this.print("found:")
       this.print(a)
       this.print(b)
     }
-    
+
     ()
-/*
+    /*
     def joins(s1:String, s2:String) = s1.endsWith(s2.substring(0,1))
     val w1 = amb(List("the","that","a"))
     val w2 = amb(List("frog","elephant","thing"))
@@ -105,11 +121,11 @@ trait AmbProg1 extends LiftPrimitives with PrimitiveOps with IfThenElse with Equ
     require(joins(w2,w3))
     require(joins(w3,w4))
     yld(List(w1,w2,w3,w4))
-    
-    // result: that thing grows slowly
-*/    
 
-/*
+    // result: that thing grows slowly
+     */
+
+    /*
 val i = amb(low to high)
 val j = amb(i to high)
 val k = amb(j to high)
@@ -123,19 +139,18 @@ yld((i,j,k))
 // (8,15,17)
 // (9,12,15)
 // (12,16,20)
-*/
+     */
   }
 }
 
-
 trait AmbProg2 extends AmbProg1 {
-  
+
   override def test(x: Rep[Int]): Rep[Unit] = {
-    
+
     reset {
-      val a = amb(List(unit(1),unit(2),unit(3),unit(4)))
-      val b = amb(List(unit(1),unit(2),unit(3),unit(4)))
-      val c = amb(List(unit(1),unit(2),unit(3),unit(4)))
+      val a = amb(List(unit(1), unit(2), unit(3), unit(4)))
+      val b = amb(List(unit(1), unit(2), unit(3), unit(4)))
+      val c = amb(List(unit(1), unit(2), unit(3), unit(4)))
       require(a != b)
       require(b != c)
 //      require(c != a)
@@ -145,84 +160,130 @@ trait AmbProg2 extends AmbProg1 {
       this.print(b)
       this.print(c)
     }
-    
+
     ()
   }
-  
-  
+
 }
 
-
-
-
 class TestCPS extends FileDiffSuite {
-  
+
   val prefix = home + "test-out/epfl/test9-"
-  
+
   def testCps1 = {
-    withOutFile(prefix+"cps1") {
-      new CpsProg1 with CoreOpsPkgExp with EqualExp with IfThenElseExp with PrintExp with ScalaCompile { self =>
-        val codegen = new ScalaGenPrimitiveOps with ScalaGenEqual with ScalaGenIfThenElse with ScalaGenPrint { val IR: self.type = self }
-        //override def compile
+    withOutFile(prefix + "cps1") {
+      new CpsProg1
+        with CoreOpsPkgExp
+        with EqualExp
+        with IfThenElseExp
+        with PrintExp
+        with ScalaCompile { self =>
+        val codegen = new ScalaGenPrimitiveOps
+          with ScalaGenEqual
+          with ScalaGenIfThenElse
+          with ScalaGenPrint { val IR: self.type = self }
+        // override def compile
         codegen.emitSource(test, "Test", new PrintWriter(System.out))
       }
     }
-    assertFileEqualsCheck(prefix+"cps1")
+    assertFileEqualsCheck(prefix + "cps1")
   }
 
   def testCps2 = {
-    withOutFile(prefix+"cps2") {
-      new CpsProg2 with CoreOpsPkgExp with EqualExp with IfThenElseExp with PrintExp with ScalaCompile { self =>
-        val codegen = new ScalaGenPrimitiveOps with ScalaGenEqual with ScalaGenIfThenElse with ScalaGenPrint { val IR: self.type = self }
-        //override def compile
+    withOutFile(prefix + "cps2") {
+      new CpsProg2
+        with CoreOpsPkgExp
+        with EqualExp
+        with IfThenElseExp
+        with PrintExp
+        with ScalaCompile { self =>
+        val codegen = new ScalaGenPrimitiveOps
+          with ScalaGenEqual
+          with ScalaGenIfThenElse
+          with ScalaGenPrint { val IR: self.type = self }
+        // override def compile
         codegen.emitSource(test, "Test", new PrintWriter(System.out))
       }
     }
-    assertFileEqualsCheck(prefix+"cps2")
+    assertFileEqualsCheck(prefix + "cps2")
   }
- 
+
   def testAmb1a = {
-    withOutFile(prefix+"amb1a") {
-      new AmbProg1 with CoreOpsPkgExp with EqualExp with IfThenElseExp with PrintExp with ScalaCompile { self =>
-        val codegen = new ScalaGenPrimitiveOps with ScalaGenEqual with ScalaGenIfThenElse with ScalaGenPrint { val IR: self.type = self }
-        //override def compile
+    withOutFile(prefix + "amb1a") {
+      new AmbProg1
+        with CoreOpsPkgExp
+        with EqualExp
+        with IfThenElseExp
+        with PrintExp
+        with ScalaCompile { self =>
+        val codegen = new ScalaGenPrimitiveOps
+          with ScalaGenEqual
+          with ScalaGenIfThenElse
+          with ScalaGenPrint { val IR: self.type = self }
+        // override def compile
         codegen.emitSource(test, "Test", new PrintWriter(System.out))
       }
     }
-    assertFileEqualsCheck(prefix+"amb1a")
+    assertFileEqualsCheck(prefix + "amb1a")
   }
-  
+
   def testAmb1b = {
-    withOutFile(prefix+"amb1b") {
-      new AmbProg1 with CoreOpsPkgExp with EqualExpOpt with IfThenElseExpOpt with BooleanOpsExp with PrintExp with ScalaCompile { self =>
-        val codegen = new ScalaGenPrimitiveOps with ScalaGenEqual with ScalaGenIfThenElse with ScalaGenPrint { val IR: self.type = self }
-        //override def compile
+    withOutFile(prefix + "amb1b") {
+      new AmbProg1
+        with CoreOpsPkgExp
+        with EqualExpOpt
+        with IfThenElseExpOpt
+        with BooleanOpsExp
+        with PrintExp
+        with ScalaCompile { self =>
+        val codegen = new ScalaGenPrimitiveOps
+          with ScalaGenEqual
+          with ScalaGenIfThenElse
+          with ScalaGenPrint { val IR: self.type = self }
+        // override def compile
         codegen.emitSource(test, "Test", new PrintWriter(System.out))
       }
     }
-    assertFileEqualsCheck(prefix+"amb1b")
+    assertFileEqualsCheck(prefix + "amb1b")
   }
 
   def testAmb2a = {
-    withOutFile(prefix+"amb2a") {
-      new AmbProg2 with CoreOpsPkgExp with EqualExp with IfThenElseExp with PrintExp with ScalaCompile { self =>
-        val codegen = new ScalaGenPrimitiveOps with ScalaGenEqual with ScalaGenIfThenElse with ScalaGenPrint { val IR: self.type = self }
-        //override def compile
+    withOutFile(prefix + "amb2a") {
+      new AmbProg2
+        with CoreOpsPkgExp
+        with EqualExp
+        with IfThenElseExp
+        with PrintExp
+        with ScalaCompile { self =>
+        val codegen = new ScalaGenPrimitiveOps
+          with ScalaGenEqual
+          with ScalaGenIfThenElse
+          with ScalaGenPrint { val IR: self.type = self }
+        // override def compile
         codegen.emitSource(test, "Test", new PrintWriter(System.out))
       }
     }
-    assertFileEqualsCheck(prefix+"amb2a")
+    assertFileEqualsCheck(prefix + "amb2a")
   }
-  
+
   def testAmb2b = {
-    withOutFile(prefix+"amb2b") {
-      new AmbProg2 with CoreOpsPkgExp with EqualExpOpt with IfThenElseExpOpt with BooleanOpsExp with PrintExp with ScalaCompile { self =>
-        val codegen = new ScalaGenPrimitiveOps with ScalaGenEqual with ScalaGenIfThenElse with ScalaGenPrint { val IR: self.type = self }
-        //override def compile
+    withOutFile(prefix + "amb2b") {
+      new AmbProg2
+        with CoreOpsPkgExp
+        with EqualExpOpt
+        with IfThenElseExpOpt
+        with BooleanOpsExp
+        with PrintExp
+        with ScalaCompile { self =>
+        val codegen = new ScalaGenPrimitiveOps
+          with ScalaGenEqual
+          with ScalaGenIfThenElse
+          with ScalaGenPrint { val IR: self.type = self }
+        // override def compile
         codegen.emitSource(test, "Test", new PrintWriter(System.out))
       }
     }
-    assertFileEqualsCheck(prefix+"amb2b")
+    assertFileEqualsCheck(prefix + "amb2b")
   }
 
 }
